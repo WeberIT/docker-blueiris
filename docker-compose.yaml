@@ -8,8 +8,8 @@ services:
     volumes:
       - config:/config:rw
       - data:/data:rw
-      - /etc/localtime:/etc/localtime:ro
-      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:rw
+      - /etc/timezone:/etc/timezone:rw
     #devices:
     #  - "/dev/dri/renderD128:/dev/dri/renderD128"
     environment:
